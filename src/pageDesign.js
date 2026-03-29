@@ -11,6 +11,17 @@ let restaurantName = document.createElement('h1');
         contentBox.appendChild(restaurantName);
     }
 
+
+import restaurantImage from "./images/restaurant.jpeg";
+let restaurantImg = document.createElement('img');
+    if(restaurantImg){
+        restaurantImg.classList.add("restaurantImg");
+        restaurantImg.src=restaurantImage;
+    }
+
+
+
+
 let restaurantAbout= document.createElement('div');
     if(restaurantAbout){
         restaurantAbout.classList.add("restaurantAbout");
@@ -19,10 +30,14 @@ let restaurantAbout= document.createElement('div');
                 we make our biscuits from scratch from fresh ingrediants and quick service. Enjoy our "deal of the week" where 
                 we have deals on all of your favorite breakfast fixings! Come by Biscuit Bonanza today and see what all the fuss is about, you 
                 may just find your new favorite place in the morning! Quick, simple, filling. That's how we do it here at Biscuit Bonanza!`
-        content.appendChild(restaurantAbout);
     }
 
+let picAndAbout = document.createElement('div');
+    if(picAndAbout){
+        picAndAbout.classList.add("picAndAbout");
+        picAndAbout.appendChild(restaurantImg);
+        picAndAbout.appendChild(restaurantAbout);
+        contentBox.appendChild(picAndAbout);
+    }
 
-
-
-export{contentBox, restaurantName, restaurantAbout};
+export{contentBox, restaurantName, restaurantAbout, restaurantImg, picAndAbout};

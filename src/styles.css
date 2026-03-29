@@ -1,9 +1,79 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+
 body{
-    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(237, 203, 158, 0.419);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    width: 60%;
+    height: 5%;
 }
 
 #content{
@@ -11,17 +81,38 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60vw;
-    height: 60vh;
+    width: 60%;
+    height: 85%;
     border: 2px solid black;
 }
 
 .restaurantName{
-    color: white;
+    /* color: white; */
+    background-color: white;
+    border-bottom: 1px solid black;
+    height: auto;
+    width: 100%;
+    font-size: 3rem;
 }
 
 
 .restaurantAbout{
-    
+    border: 2px solid white;
+    width: 35%;
+    padding: 1rem;
+    background-color: white;
+}
+
+.restaurantImg{
+    width: 65%;
+    height:100%;
+}
+
+.picAndAbout{
+    display: flex;
+    /* gap: 2rem; */
+    width: 100%;
+    height: 90%;
+    /* padding: 0 1rem 0 1rem; */
 }
 /* Don't forget to use curly braces in css */
