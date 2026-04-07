@@ -95,10 +95,10 @@ header nav button{
     flex-grow: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 60%;
-    height: 85vh;
+    min-height: 85vh;
     border: 2px solid black;
 }
 
@@ -149,4 +149,31 @@ header nav button{
   justify-content: center;
   align-items: center;
   font-size: 3rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.innerContent{
+  background-color: rgba(255, 255, 255, 0.759);
+  min-height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menuBox{
+  background-color: white;
+  width: 350px;
+  height: 350px;
+  margin-top: 10%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }

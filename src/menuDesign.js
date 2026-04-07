@@ -11,10 +11,37 @@ let menuDesign = () => {
             title.textContent='Menu';
             contentBox.appendChild(title);
         }
+    let innerContent = document.createElement('div');
+        if(innerContent){
+            innerContent.classList.add('innerContent');
+            contentBox.appendChild(innerContent)
+        }
+
+        // innerContent will be the box that everything goes in
 
 
+    let menu1 = document.createElement('div');
+        if(menu1){
+            menu1.classList.add('menuBox');
+              
+            let h2 = document.createElement('h2');
+            h2.textContent='Sausage and Egg Biscuit';
+            h2.style.fontSize='1.75rem';
 
+            let description = document.createElement('p');
+                description.style.textAlign='center';
+                description.textContent=`Homefried Sausage with fresh made to perfection egg, 
+                                        the perfect combination. With fresh made biscuits every morning 
+                                        you can't go wrong!`;
 
+            let price = document.createElement('h2');
+                price.textContent='$3.50';
+
+            menu1.appendChild(h2);
+            menu1.appendChild(description);
+            menu1.appendChild(price);
+            innerContent.appendChild(menu1);
+        }
 
 
 
