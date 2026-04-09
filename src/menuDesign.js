@@ -3,6 +3,8 @@ let menuDesign = () => {
 
     let contentBox = document.querySelector('#content');
     contentBox.textContent='';
+    contentBox.style.height='auto';
+
 
 
     let title = document.createElement('h1');

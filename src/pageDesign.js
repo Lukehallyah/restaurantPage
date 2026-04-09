@@ -6,6 +6,7 @@ let homePage = () =>{
         let contentBox = document.querySelector("#content");
         contentBox.textContent='';
         contentBox.style.height='95vh';
+        // this is the code that's breaking the menuDesign.js
 
 
         let restaurantName = document.createElement('h1');
