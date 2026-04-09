@@ -5,6 +5,7 @@ import restaurantImage from "./images/restaurant.jpeg";
 let homePage = () =>{
         let contentBox = document.querySelector("#content");
         contentBox.textContent='';
+        contentBox.style.height='95vh';
 
 
         let restaurantName = document.createElement('h1');

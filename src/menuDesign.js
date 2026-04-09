@@ -43,6 +43,29 @@ let menuDesign = () => {
             innerContent.appendChild(menu1);
         }
 
+    let menu2 = document.createElement('div');
+        if(menu2){
+            menu2.classList.add('menuBox');
+              
+            let h2 = document.createElement('h2');
+            h2.textContent='Bacon Egg and Cheese Biscuit';
+            h2.style.textAlign='center';
+            h2.style.fontSize='1.75rem';
+
+            let description = document.createElement('p');
+                description.style.textAlign='center';
+                description.textContent=`Crispy fried bacon on a fresh buttermilk biscuit topped with cheese and 
+                                            fresh cooked eggs, ready and waiting for you in the morning`;
+
+            let price = document.createElement('h2');
+                price.textContent='$3.50';
+
+            menu2.appendChild(h2);
+            menu2.appendChild(description);
+            menu2.appendChild(price);
+            innerContent.appendChild(menu2);
+        }
+
 
 
 
