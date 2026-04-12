@@ -1,6 +1,10 @@
 
 let menuDesign = () => {
 
+    // let body= document.querySelector('body');
+    // body.style.backgroundSize='cover';
+    // body.style.backgroundPosition='bottom';
+
     let contentBox = document.querySelector('#content');
     contentBox.textContent='';
     contentBox.style.height='auto';

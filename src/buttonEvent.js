@@ -4,7 +4,7 @@ let contactButton = document.querySelector("#contact");
 
 import {homePage} from './pageDesign.js';
 import {menuDesign} from './menuDesign.js';
-
+import {contactDesign} from './contact.js';
 
 // Want it so that when clicked it performs a function
 
@@ -17,7 +17,7 @@ menuButton.addEventListener('click', ()=>{
 })
 
 contactButton.addEventListener('click', ()=>{
-    alert('This is a button')
+    console.log(contactDesign());
 })
 
 export{homeButton, menuButton, contactButton};

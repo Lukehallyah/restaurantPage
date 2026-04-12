@@ -72,6 +72,7 @@ body{
     background-image: url("/src/images/flourBackground.jpg");
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
 }
 
 header{
@@ -178,3 +179,26 @@ header nav button{
   align-items: center;
   gap: 1.5rem;
 }
+
+
+/* CONTACT */
+
+.contactBox{
+  margin-top: 10vh;
+  height:250px;
+  width: 500px;
+  padding: 5vh;
+  background-color: white;
+
+}
+
+.name{
+  font-size: 2rem;
+}
+
+.rank{
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
