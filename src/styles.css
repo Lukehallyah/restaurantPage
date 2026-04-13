@@ -78,7 +78,8 @@ body{
 header{
     width: 60%;
     height: 5vh;
-    background-color: rgb(231, 180, 114);
+    /* background-color: rgb(231, 180, 114); */
+    
 }
 
 header nav{
@@ -202,3 +203,9 @@ header nav button{
   padding-top: 1rem;
 }
 
+
+.contactEnd{
+  text-align: center;
+  width: 75%;
+  padding-top: 2rem;
+}
